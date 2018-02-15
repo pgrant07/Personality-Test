@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+    <title>Document</title>
+</head>
+<body bgcolor="#e0e0e0">
+    <style>
+        label.question{
+            font-size: 20px;
+        }
+    </style>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-extended center blue">
+                <div class="nav-wrapper">
+                    <h3>Personality Test</h3>
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent tabs-fixed-width">
+                        <li class="tab"><a class="active" href="#test">Test</a></li>
+                        <li class="tab disabled"><a href="#results">Results</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <form id="test" action="#" onsubmit="return validateForm()">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="input-field col s12">
+                            <select id="quest1">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Strongly Disagree</option>
+                                <option value="2">Disagree</option>
+                                <option value="3">Neither</option>
+                                <option value="4">Agree</option>
+                                <option value="5">Strongly Agree</option>
+                            </select>
+                            <label class="question">I tend to be quite a relaxed person</label>
+                        </div>
+                        
+                        <div class="input-field col s12">
+                            <select id="quest2">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Strongly Disagree</option>
+                                <option value="2">Disagree</option>
+                                <option value="3">Neither</option>
+                                <option value="4">Agree</option>
+                                <option value="5">Strongly Agree</option>
+                            </select>
+                            <label class="question">I am happy to take the lead in a group</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select id="quest3">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Strongly Disagree</option>
+                                <option value="2">Disagree</option>
+                                <option value="3">Neither</option>
+                                <option value="4">Agree</option>
+                                <option value="5">Strongly Agree</option>
+                            </select>
+                            <label class="question">I adapt easily to change</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select id="quest4">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Strongly Disagree</option>
+                                <option value="2">Disagree</option>
+                                <option value="3">Neither</option>
+                                <option value="4">Agree</option>
+                                <option value="5">Strongly Agree</option>
+                            </select>
+                            <label class="question">I believe that rules are to be followed</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select id="quest5">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Strongly Disagree</option>
+                                <option value="2">Disagree</option>
+                                <option value="3">Neither</option>
+                                <option value="4">Agree</option>
+                                <option value="5">Strongly Agree</option>
+                            </select>
+                            <label class="question">I believe that taking care of the details is very important</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="submit" class="btn waves-effect waves-light center" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
